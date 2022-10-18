@@ -4,15 +4,10 @@ numbers = list(map(int,inputvalues.split()))
 
 
 numbers2 = []
-length = len(numbers)
-for i in range(len(numbers)):
-   #length = len(numbers) 
-   if (i % 2 == 0):
-      #x = numbers.pop(i)
-      #print(x)
-      numbers2.append(numbers.pop(i))
-      length = len(numbers)
-   
+#length = len(numbers)
+for i in range(5):
+    numbers2.append(numbers.pop(i))
+
 print('The list numbers \n', numbers)
 print('The list for even index elements\n', numbers2)
 

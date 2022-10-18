@@ -1,13 +1,19 @@
 
 inputvalues = input('Enter all elements values: ')
-numbers1 = inputvalues.split() 
-for i in range(len(numbers1)):
-	numbers1[i] = int(numbers1[i]) 
+numbers = list(map(int,inputvalues.split()))   
 
 
 numbers2 = []
-numbers2 = [ v for v in numbers1 if v % 2 ==0]		
-print('The list numbers \n', numbers1)
+length = len(numbers)
+for i in range(len(numbers)):
+   #length = len(numbers) 
+   if (i % 2 == 0):
+      #x = numbers.pop(i)
+      #print(x)
+      numbers2.append(numbers.pop(i))
+      length = len(numbers)
+   
+print('The list numbers \n', numbers)
 print('The list for even index elements\n', numbers2)
 
 # The following line is the same as the for-loop
